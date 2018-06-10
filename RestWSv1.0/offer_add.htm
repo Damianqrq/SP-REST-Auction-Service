@@ -1,0 +1,29 @@
+<div class="w3-container w3-light-blue w3-padding-64 w3-row">
+    <br>
+    <h2>Wprowadź nowe ogłoszenie!</h2>
+</div>
+<form class="w3-container w3-card-4 w3-padding-64 w3-border">
+    <p>
+        <label>Tytuł</label>
+        <input class="w3-input w3-border" type="text" ng-model="form.title">
+    </p>
+    <p>
+        <label>Treść ogłoszenia</label>
+        <textarea class="w3-input w3-border" ng-model="form.content"></textarea>
+    </p>
+    
+    <p class="w3-half">
+        <label>Cena(opcjonalnie)</label>
+        <input class="w3-input w3-border" type="number" step="0.01" ng-model="form.price">
+    </p>
+    <p class="w3-half">
+        <label>Url zdjęcia(opcjonalnie)</label>
+        <input class="w3-input w3-border" type="text" ng-model="form.image_url">
+    </p>
+    <div class="w3-row">
+    <p>
+        <button type="button" class="w3-btn w3-padding w3-teal"
+            ng-click="sendForm()" style="width:120px">Wyślij &nbsp; ❯</button>
+    </p>
+    </div>
+</form>

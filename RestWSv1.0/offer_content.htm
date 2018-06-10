@@ -1,0 +1,16 @@
+<div class="w3-row w3-padding-64">
+    <h1 class="w3-text-indigo  w3-center">{{offer.title}}</h1>
+    <div class="w3-container  w3-center">
+      <img ng-src="{{offer.image_url || 'images/placeholder.png'}}" class="w3-border  w3-center" style="width: 70%">
+    </div>
+    
+    <div class="w3-twothird w3-container">
+        <h2 ng-if="isPrice(offer.price)">{{offer.price}}zł</h2>
+      <p>
+          {{offer.content}}
+      </p>
+      <button type="button" class="w3-btn w3-padding w3-red" ng-click="deleteOffer()">
+          Skasuj Ofertę X
+      </button>
+    </div>
+  </div>
